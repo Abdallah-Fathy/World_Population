@@ -1,0 +1,13 @@
+CREATE TABLE World_Population(
+ID INTEGER,
+country varchar,
+area float,
+population float,
+population_growth float,
+birth_rate float,
+death_rate float,
+migration_rate float
+);
+
+
+COPY World_Population FROM 'D:\World Population.csv' DELIMITER ',' CSV HEADER null 'NA' ;
